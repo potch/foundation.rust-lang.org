@@ -32,23 +32,6 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
-  color: var(--orange);
-}
-a[href]:hover {
-  color: var(--orange);
-}
-a[href]:visited {
-  color: var(--darkgray);
-}
-main :first-child {
-  margin-top: 0;
-}
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 table {
   margin: 1em 0;
 }
@@ -61,6 +44,27 @@ h1,h2,h3 {
     font-family: "Lato", sans-serif;
 }
 
+/* Post */
+.post {
+    width: 80%;
+    margin: 0 auto;
+}
+.post h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+#author {
+    color: var(--black);
+}
+#date {
+    font-style: italic;
+}
+.post h2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Grid */
 .container {
   width: 90%;
   margin: 2em auto;
@@ -75,6 +79,7 @@ header {
   background: linear-gradient(0deg, rgba(244,102,35,1) 0%, rgba(255,168,61,1) 100%);
   color: var(--white);
   font-family: 'Lato', sans-serif;
+  padding-bottom: 1em;
 }
 header a[href]:visited {
   color: var(--lightgrey);
@@ -236,7 +241,7 @@ a[href].direct-link:focus:visited,
 /* Footer */
 footer {
     padding: 1em 0;
-    background-color: var(--darkgray);
+    background-color: var(--orange);
     color: var(--white);
     text-align: center;
 }
